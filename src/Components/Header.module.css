@@ -1,3 +1,52 @@
-.container{
+.header {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0 5px 3px 0 rgba(60, 60, 67, 0.1);
+    color: rgba(60, 60, 67, 0.81);
+}
 
+.header_logoHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logoHolder_text {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header_paginationHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.header_paginationHolder_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_paginationHolder_link_name {
+    cursor: pointer;
+}
+
+.header_MainSiteHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_MainSiteHolder_name {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
