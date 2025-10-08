@@ -1,3 +1,8 @@
-.active_page{
-    border-bottom: 1px solid rgba(60, 60, 67, 0.81);
+.active_page {
+  border-bottom: 1px solid rgba(60, 60, 67, 0.81);
+}
+
+.page {
+  width: 100%;
+  padding: 30px 15px;
 }
