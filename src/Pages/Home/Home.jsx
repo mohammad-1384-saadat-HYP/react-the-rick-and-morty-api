@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={`${styles.home} page`}>
+    <div className={styles.home}>
       <h1 className={styles.home_welcomeText}>
         Welcome! Explore the data with The Rick and Morty API.
       </h1>
