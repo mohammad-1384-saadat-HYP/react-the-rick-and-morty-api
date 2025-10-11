@@ -23,11 +23,11 @@ const Home = () => {
           <Link to="/characters" className={styles.home_pages_btns_link}>
             <span className={styles.home_pages_btns_link_name}>Characters</span>
           </Link>
-          <Link to="/episodes" className={styles.home_pages_btns_link}>
-            <span className={styles.home_pages_btns_link_name}>Episodes</span>
-          </Link>
           <Link to="/locations" className={styles.home_pages_btns_link}>
             <span className={styles.home_pages_btns_link_name}>Locations</span>
+          </Link>
+          <Link to="/episodes" className={styles.home_pages_btns_link}>
+            <span className={styles.home_pages_btns_link_name}>Episodes</span>
           </Link>
         </div>
       </div>

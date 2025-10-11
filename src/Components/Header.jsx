@@ -22,14 +22,14 @@ const Header = () => {
             Characters
           </span>
         </Link>
-        <Link to="/episodes" className={styles.header_paginationHolder_link}>
-          <span className={styles.header_paginationHolder_link_name}>
-            Episodes
-          </span>
-        </Link>
         <Link to="/locations" className={styles.header_paginationHolder_link}>
           <span className={styles.header_paginationHolder_link_name}>
             Locations
+          </span>
+        </Link>
+        <Link to="/episodes" className={styles.header_paginationHolder_link}>
+          <span className={styles.header_paginationHolder_link_name}>
+            Episodes
           </span>
         </Link>
       </div>
