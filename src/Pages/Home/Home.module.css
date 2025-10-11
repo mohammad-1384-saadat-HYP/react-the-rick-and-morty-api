@@ -1,0 +1,65 @@
+.home {
+  width: 100%;
+  height: calc(100vh - 325px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px;
+}
+
+.home_welcomeText {
+  max-width: 800px;
+  color: #202329;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.home_description {
+  max-width: 1000px;
+  line-height: 1.75;
+  text-align: center;
+  font-weight: 500;
+  color: #3c3c43;
+  margin: auto 0;
+}
+
+.home_pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.home_pages_title {
+  color: #202329;
+}
+
+.home_pages_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home_pages_btns_link {
+  padding: 7px 15px;
+  border: 1px solid #ff9800;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.home_pages_btns_link_name {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.1s linear;
+}
+
+.home_pages_btns_link:hover {
+  border: 1px solid transparent;
+  background-color: #ff9800;
+}
+
+.home_pages_btns_link:hover .home_pages_btns_link_name {
+  color: #ffffff;
+}
