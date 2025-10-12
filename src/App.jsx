@@ -6,7 +6,6 @@ import Home from "./Pages/Home/Home.jsx";
 import Characters from "./Pages/Characters/Characters.jsx";
 import Episodes from "./Pages/Episodes/Episodes.jsx";
 import Locations from "./Pages/Locations/Locations.jsx";
-import "./general.css";
 
 const App = () => {
   return (

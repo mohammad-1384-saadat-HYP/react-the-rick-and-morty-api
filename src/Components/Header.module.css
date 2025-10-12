@@ -37,14 +37,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.header_paginationHolder_link:hover {
+  color: #ff9800;
 }
 
 .header_paginationHolder_link_name {
   cursor: pointer;
-}
-
-.header_paginationHolder_link_name:hover {
-  color: #ff9800;
 }
 
 .header_MainSiteHolder {

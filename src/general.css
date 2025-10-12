@@ -1,7 +1,0 @@
-.active_page {
-  border-bottom: 1px solid rgba(60, 60, 67, 0.81);
-}
-
-.active_page:hover {
-  border-color: #ff9800;
-}
