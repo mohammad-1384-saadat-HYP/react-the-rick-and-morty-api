@@ -9,7 +9,7 @@ const Loading = () => {
         <div className={styles.loading_content_iconHolder}>
           <Loader className={styles.loading_content_iconHolder_icon} />
         </div>
-        <h1 className={styles.loading_content_text}>Loading</h1>
+        <h1>Loading</h1>
       </div>
     </div>
   );

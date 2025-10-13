@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   cursor: default;
+  color: #333333;
 }
 
 :root {
@@ -33,7 +34,7 @@ ul {
 }
 
 .active_page {
-  border-bottom: 1px solid rgba(60, 60, 67, 0.81);
+  border-bottom: 1px solid #333333;
 }
 
 .active_page:hover {
