@@ -44,6 +44,7 @@
 }
 
 .header_paginationHolder_link_name {
+  color: inherit;
   cursor: pointer;
 }
 
