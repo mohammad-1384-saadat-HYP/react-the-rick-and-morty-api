@@ -7,16 +7,16 @@ export const headerMenu = [
   {
     id: 2,
     label: "Characters",
-    to: "/Characters",
+    to: "/characters",
   },
   {
     id: 3,
     label: "Locations",
-    to: "/Locations",
+    to: "/locations",
   },
   {
     id: 4,
     label: "Episodes",
-    to: "/Episodes",
+    to: "/episodes",
   },
 ];
