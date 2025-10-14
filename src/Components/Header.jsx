@@ -29,24 +29,6 @@ const Header = () => {
             </Link>
           );
         })}
-        {/* <Link to="/" className={`${styles.header_paginationHolder_link}`}>
-          <span className={styles.header_paginationHolder_link_name}>Home</span>
-        </Link>
-        <Link to="/characters" className={styles.header_paginationHolder_link}>
-          <span className={styles.header_paginationHolder_link_name}>
-            Characters
-          </span>
-        </Link>
-        <Link to="/locations" className={styles.header_paginationHolder_link}>
-          <span className={styles.header_paginationHolder_link_name}>
-            Locations
-          </span>
-        </Link>
-        <Link to="/episodes" className={styles.header_paginationHolder_link}>
-          <span className={styles.header_paginationHolder_link_name}>
-            Episodes
-          </span>
-        </Link> */}
       </div>
       <a
         href="https://rickandmortyapi.com/"
