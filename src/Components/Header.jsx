@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router";
-import { headerMenu } from "../constants/constants";
 import styles from "./Header.module.css";
+import { headerMenu } from "../constants/constans";
 
 const Header = () => {
   const { pathname } = useLocation();
