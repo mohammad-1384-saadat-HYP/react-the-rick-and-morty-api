@@ -1,61 +1,11 @@
 import React from "react";
-import { FaMale, FaFemale } from "react-icons/fa";
-import { FaQuestion } from "react-icons/fa6";
-import { Heart, Skull } from "lucide-react";
+import { Link } from "react-router";
+import { funGender, funStatus } from "../../../constants/constans";
 import styles from "./Character.module.css";
 
 const Character = ({ data }) => {
-  const genderFun = () => {
-    switch (data.gender) {
-      case "Female":
-        return (
-          <FaFemale
-            className={styles.Character_details_holder_iconHolder_icon}
-          />
-        );
-      case "Male":
-        return (
-          <FaMale className={styles.Character_details_holder_iconHolder_icon} />
-        );
-      case "unknown":
-      case "Genderless":
-        return (
-          <FaQuestion
-            className={styles.Character_details_holder_iconHolder_icon}
-          />
-        );
-      default:
-        break;
-    }
-  };
-
-  const statusFun = () => {
-    switch (data.status) {
-      case "Alive":
-        return (
-          <Heart
-            className={`${styles.Character_details_holder_iconHolder_icon} ${styles.heart}`}
-          />
-        );
-      case "Dead":
-        return (
-          <Skull
-            className={`${styles.Character_details_holder_iconHolder_icon} ${styles.skull}`}
-          />
-        );
-      case "unknown":
-        return (
-          <FaQuestion
-            className={`${styles.Character_details_holder_iconHolder_icon} ${styles.question}`}
-          />
-        );
-      default:
-        break;
-    }
-  };
-
   return (
-    <div className={styles.Character}>
+    <Link to={`/characters/character-${data.id}`} className={styles.Character}>
       <div className={styles.Character_imgHolder}>
         <img
           className={styles.Character_imgHolder_img}
@@ -65,26 +15,32 @@ const Character = ({ data }) => {
       </div>
       <div className={styles.Character_details}>
         <div className={styles.Character_details_holder}>
-          <h3 className={styles.Character_details_holder_name}>{data.name}</h3>
+          <span className={styles.Character_details_holder_name}>
+            {data.name}
+          </span>
         </div>
         <div className={styles.Character_details_holder}>
-          <h4 className={styles.Character_details_holder_title}>gender:</h4>
+          <span className={styles.Character_details_holder_title}>gender:</span>
           <div className={styles.Character_details_holder_iconHolder}>
-            {genderFun()}
+            {funGender(data, styles)}
           </div>
         </div>
         <div className={styles.Character_details_holder}>
-          <h4 className={styles.Character_details_holder_title}>status:</h4>
+          <span className={styles.Character_details_holder_title}>status:</span>
           <div className={styles.Character_details_holder_iconHolder}>
-            {statusFun()}
+            {funStatus(data, styles)}
           </div>
         </div>
         <div className={styles.Character_details_holder}>
-          <h4 className={styles.Character_details_holder_title}>species:</h4>
-          <h3>{data.species}</h3>
+          <span className={styles.Character_details_holder_title}>
+            species:
+          </span>
+          <span className={styles.Character_details_holder_title_species}>
+            {data.species}
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

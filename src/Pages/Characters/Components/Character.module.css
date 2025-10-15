@@ -43,6 +43,7 @@
 
 .Character_details_holder_title {
   color: #cccccc;
+  font-weight: bold;
 }
 
 .Character_details_holder_name {
@@ -51,6 +52,8 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .Character_details_holder_iconHolder {
@@ -107,4 +110,9 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+.Character_details_holder_title_species {
+  font-size: 18px;
+  font-weight: bold;
 }
