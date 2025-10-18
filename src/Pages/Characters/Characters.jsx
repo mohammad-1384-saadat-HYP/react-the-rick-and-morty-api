@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../../Components/Loader/Loader";
-import Character from "./Components/character";
-import Pagination from "./Components/pagination";
+import Character from "../../Components/Character";
+import Pagination from "../../Components/Pagination";
 import styles from "./Characters.module.css";
 
 const Characters = () => {

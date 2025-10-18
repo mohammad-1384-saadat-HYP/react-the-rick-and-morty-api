@@ -22,13 +22,13 @@ const Character = ({ data }) => {
         <div className={styles.Character_details_holder}>
           <span className={styles.Character_details_holder_title}>gender:</span>
           <div className={styles.Character_details_holder_iconHolder}>
-            {funGender(data, styles)}
+            {funGender(data)}
           </div>
         </div>
         <div className={styles.Character_details_holder}>
           <span className={styles.Character_details_holder_title}>status:</span>
           <div className={styles.Character_details_holder_iconHolder}>
-            {funStatus(data, styles)}
+            {funStatus(data)}
           </div>
         </div>
         <div className={styles.Character_details_holder}>
