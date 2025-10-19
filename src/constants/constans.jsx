@@ -58,3 +58,5 @@ export const funStatus = (data) => {
       break;
   }
 };
+
+export const scrollToTop = () => window.scrollTo({ top: 0 });

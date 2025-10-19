@@ -3,13 +3,19 @@ import axios from "axios";
 import Loader from "../../Components/Loader/Loader";
 import Character from "../../Components/Character";
 import Pagination from "../../Components/Pagination";
+import { scrollToTop } from "../../constants/constans";
 import styles from "./Characters.module.css";
 
 const Characters = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [info, setInfo] = useState([]);
   const [results, setResults] = useState([]);
+  const [info, setInfo] = useState([]);
   const [pageNum, setPageNum] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetchData();
+    scrollToTop();
+  }, [pageNum]);
 
   const fetchData = async () => {
     setIsLoading(true);
@@ -31,18 +37,11 @@ const Characters = () => {
     }
   };
 
-  const scrollToTop = () => window.scrollTo({ top: 0 });
-
-  useEffect(() => {
-    fetchData();
-    scrollToTop();
-  }, [pageNum]);
-
-  const pageminus = () => setPageNum((num) => num - 1);
+  const pageMinus = () => setPageNum((num) => num - 1);
 
   const pagePlus = () => setPageNum((num) => num + 1);
 
-  const pagechange = (num) => setPageNum(num);
+  const pageChange = (num) => setPageNum(num);
 
   return (
     <div className={styles.characters}>
@@ -59,9 +58,9 @@ const Characters = () => {
             <Pagination
               info={info}
               page={pageNum}
-              minus={pageminus}
+              minus={pageMinus}
               plus={pagePlus}
-              change={pagechange}
+              change={pageChange}
             />
           </>
         )}
