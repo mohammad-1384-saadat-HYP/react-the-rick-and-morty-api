@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../../Components/Loading";
-import { scrollToTop } from "../../constants/constans";
+import { scrollToTop } from "../../utils/utils";
 import Pagination from "../../Components/Pagination";
-import Items from "../../Components/Items";
+import Item from "../../Components/Item";
 import styles from "./Locations.module.css";
 
 const Locations = () => {
@@ -15,7 +15,7 @@ const Locations = () => {
   useEffect(() => {
     fetchLocations();
     scrollToTop();
-  }, []);
+  }, [pageNum]);
 
   const fetchLocations = async () => {
     setIsLoading(true);
@@ -28,8 +28,8 @@ const Locations = () => {
         console.error("failed to get correct response: ", result);
         return;
       }
-      console.log(results);
-      console.log(info);
+      // console.log(results);
+      // console.log(info);
       setResults(results);
       setInfo(info);
     } catch (error) {
@@ -51,8 +51,10 @@ const Locations = () => {
         <Loading />
       ) : (
         <>
-          <div>
-            <Items />
+          <div className={styles.locations_itemsHolder}>
+            {results.map((result) => (
+              <Item key={result.id} type="location" data={result} />
+            ))}
           </div>
           <Pagination
             info={info}

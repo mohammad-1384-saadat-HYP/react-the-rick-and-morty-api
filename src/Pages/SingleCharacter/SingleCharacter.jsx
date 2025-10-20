@@ -2,11 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import Loading from "../../Components/Loading";
 import axios from "axios";
-import {
-  funGetIdFromUrl,
-  funGender,
-  funStatus,
-} from "../../constants/constans";
+import { funGetIdFromUrl, funGender, funStatus } from "../../utils/utils";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 import LoaderSingleChar from "../../Components/LoaderSingleChar/LoaderSingleChar";

@@ -3,7 +3,7 @@ import axios from "axios";
 import Loader from "../../Components/Loader/Loader";
 import Character from "../../Components/Character";
 import Pagination from "../../Components/Pagination";
-import { scrollToTop } from "../../constants/constans";
+import { scrollToTop } from "../../utils/utils";
 import styles from "./Characters.module.css";
 
 const Characters = () => {

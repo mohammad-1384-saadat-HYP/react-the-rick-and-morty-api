@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import { funGender, funStatus } from "../constants/constans";
+import { funGender, funStatus } from "../utils/utils";
 import styles from "./Character.module.css";
 
 const Character = ({ data }) => {
