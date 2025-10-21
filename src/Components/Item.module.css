@@ -1,36 +1,53 @@
 .item {
   width: 100%;
+  border: 1px dashed;
+  border-radius: 7px;
+  padding: 8px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .location {
+  border-color: #39dbce;
 }
 
 .episode {
+  border-color: #ebe843;
 }
 
 .item_name {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: start;
 }
 
-.item_type {
-}
-
-.item_type_title {
-}
-
-.item_type_value {
-}
-
-.item_episode {
-}
-
+.item_type,
 .item_dimension,
 .item_airData {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.item_type_title,
 .item_dimension_title,
 .item_airData_title {
+  color: #777777;
 }
 
+.item_type_value,
 .item_dimension_value,
-.item_airData_value {
+.item_airData_value,
+.item_episode {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
 }
