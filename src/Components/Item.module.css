@@ -13,7 +13,7 @@
 }
 
 .episode {
-  border-color: #ebe843;
+  border-color: #43eb4b;
 }
 
 .item_name {
@@ -28,7 +28,7 @@
 
 .item_type,
 .item_dimension,
-.item_airData {
+.item_airDate {
   width: 100%;
   display: flex;
   align-items: center;
@@ -37,13 +37,13 @@
 
 .item_type_title,
 .item_dimension_title,
-.item_airData_title {
+.item_airDate_title {
   color: #777777;
 }
 
 .item_type_value,
 .item_dimension_value,
-.item_airData_value,
+.item_airDate_value,
 .item_episode {
   width: 50%;
   overflow: hidden;

@@ -15,24 +15,28 @@ const Item = ({ type, data }) => {
         type === "location" ? styles.location : styles.episode
       }`}
     >
-      <span className={styles.item_name}>{data.name}</span>
+      <span className={styles.item_name}>{data.name.trim()}</span>
       {type === "location" ? (
         <div className={styles.item_type}>
           <span className={styles.item_type_title}>type:</span>
-          <span className={styles.item_type_value}>{data.type}</span>
+          <span className={styles.item_type_value}>{data.type.trim()}</span>
         </div>
       ) : (
-        <span className={styles.item_episode}>{data.episode}</span>
+        <span className={styles.item_episode}>{data.episode.trim()}</span>
       )}
       {type === "location" ? (
         <div className={styles.item_dimension}>
           <span className={styles.item_dimension_title}>dimension:</span>
-          <span className={styles.item_dimension_value}>{data.dimension}</span>
+          <span className={styles.item_dimension_value}>
+            {data.dimension.trim()}
+          </span>
         </div>
       ) : (
-        <div className={styles.item_airData}>
-          <span className={styles.item_airData_title}>air_data:</span>
-          <span className={styles.item_airData_value}>{data.air_data}</span>
+        <div className={styles.item_airDate}>
+          <span className={styles.item_airDate_title}>air_date:</span>
+          <span className={styles.item_airDate_value}>
+            {data.air_date.trim()}
+          </span>
         </div>
       )}
     </Link>
